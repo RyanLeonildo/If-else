@@ -11,26 +11,25 @@ public class ex008 {
 			sal = sc.nextDouble();
 			
 		if (sal <= 2000.00) {
-				imp = 0.0;
+			imp = 0.0;
 			
 		}else if(sal <=3000.00) {
-				imp = (sal - 2000.0)* 0.08;
+			imp = (sal - 2000.0)* 0.08;
 			
 		}else if(sal <= 4500.00) {
-				imp = (sal - 3000.0) * 0.18 + 1000.0 * 0.08;
+			imp = (sal - 3000.0) * 0.18 + 1000.0 * 0.08;
 			
 		} else {
-				imp = (sal - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;	
+			imp = (sal - 4500.0) * 0.28 + 1500.0 * 0.18 + 1000.0 * 0.08;	
 		}
-		
-		
+
 		if (imp == 0.0) {
-				System.out.println("Isento");
+			System.out.println("Isento");
 				
-			}else {
-				System.out.printf("R$ %.2f%n", imp);
-			}
-		
+		}else {
+			System.out.printf("R$ %.2f%n", imp);
+			
+		}
 		
 		sc.close();	
 	}
